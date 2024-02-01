@@ -1,0 +1,38 @@
+.control {
+
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.control button,
+.control select {
+    width: 150px;
+    height: 30px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 0.9rem;
+    /* line-height: 30px; */
+}
+.control button{
+    border-radius: 15px 15px 0 0;
+    
+}
+
+@media screen and (max-width:767px) {
+    .control {
+        flex-wrap: wrap;
+    }
+
+    .control button {
+        width: 50%;
+    }
+
+    .control select {
+        width: 100%;
+    }
+
+}

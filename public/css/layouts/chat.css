@@ -1,0 +1,12 @@
+.call{
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+video{
+    width: 50%;
+    height: auto;
+}

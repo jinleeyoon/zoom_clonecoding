@@ -1,0 +1,38 @@
+doctype html 
+html(lang="en")
+ head 
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible",content="IE=edge")
+  meta(name="viewport", content="width=device-width,initial-scale=1.0")
+  title Zoon 
+  //- link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+  link(rel="stylesheet", href="public/css/reset.css")
+  link(rel="stylesheet", href="public/css/common.css")
+  link(rel="stylesheet", href="public/css/layouts/welcome.css")
+  link(rel="stylesheet", href="public/css/layouts/control.css")
+  link(rel="stylesheet", href="public/css/layouts/chat.css")
+  link(rel="stylesheet", href="public/css/elements/bubble.css")
+  link(rel="stylesheet", href="public/css/elements/button.css")
+ body 
+  .night
+   - for (i = 0; i < 20; i++)
+    .shooting_star
+  header 
+   h1 Zoon
+  main 
+   div#welcome
+    form.welcomeForm
+     input(type="text",placeholder ="채팅방 이름을 만들어주세요", required)
+     button 채팅방 입장
+   #call.call 
+    #myStream
+     div.control
+      button#mute audio
+      button#camera camera
+      select#cameras
+     div 
+      video#myFace(autoplay, playsinline, width="400", height ="400")
+      video#peerFace(autoplay, playsinline, width="400", height="400")
+    
+  script(src="/socket.io/socket.io.js")
+  script(src="/public/js/app.js")
