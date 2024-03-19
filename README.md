@@ -1,4 +1,4 @@
-#Noom
+줌 클론코딩입니다.
 
-
-Zoom clone using NodeJS, WebRTC and WebSockets.
+리액트를 배우기 위해 만들었습니다.
+웹소켓과 express를 이용하여 만들었습니다.
